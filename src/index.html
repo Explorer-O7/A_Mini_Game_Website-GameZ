@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameZ: A Mini Game Website</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/v3.4.3/tailwind.min.css" rel="stylesheet">
+    <link rel=" stylesheet" rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="">
+        <nav id="nav-bar" class="flex">
+            <div id="first-half-nav" class="w-fit">
+                <span class="logo text-lg font-bold px-6 py-2"><a href="#">GameZ</a></span>
+                <ul class="nav-items flex pl-32">
+                    <li class="link px-1 py-0"><a href="#dashboard">Dashboard</a></li>
+                    <li class="link px-1 py-0"><a href="#contact">Contact</a></li>
+                    <li class="link px-1 py-0"><a href="#about">About</a></li>
+                    <li class="link px-1 py-0"><a href="#help-&-support">Help & Support</a></li>
+                </ul>
+            </div>
+            <div id="second-half-nav" class="search-div flex pl-36">
+                <input id="search-bar" class="" type="text" placeholder="Search">
+            </div>
+        </nav>
+        <div class="line"></div>       
+        <div class="carousel">
+            <div class="slider-nav"><button class="btn" onclick="goPrev()">Prev</button></div>
+            <div class="slider">
+                <img src="../img/slider-image-1.jpg" alt="Image" class="slide">
+                <img src="../img/slider-image-2.jpg" alt="Image" class="slide">
+                <img src="../img/slider-image-3.jpg" alt="Image" class="slide">
+                <img src="../img/slider-image-4.jpg" alt="Image" class="slide">
+            </div>
+            <div class="slider-nav">
+                <button class="btn" onclick="goNext()">Next</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="dashboard" class="inline-block nav-items-link">
+            <h1 class="">Dashboard</h1>
+        </div>
+        <div class="game-container">
+            <div class="container" name="tic tac toe">
+                <a href="./Tic-Tac-Toe/tic-tac-toe.html" target="_blank">
+                    <h3 class="game-name">Tic-Tac-Toe</h3>
+                    <img src="./Tic-Tac-Toe/img/tic-tac-toe-logo.png" alt="">
+                </a>
+            </div>
+            <div class="container" name="rock paper scissor">
+                <a href="./Rock-Paper-Scissor/rock-paper-scissor.html" target="_blank">
+                    <h3 class="game-name">Rock Paper Scissor</h3>
+                    <img src="./Rock-Paper-Scissor/img/rock-paper-scissor-logo.jpg" alt="">
+                </a>
+            </div>
+            <div class="container" name="guess the number">
+                <a href="./Guess-The-Number/guess-the-number.html" target="_blank">
+                    <h3 class="game-name">Guess The Number</h3>
+                    <img src="./Guess-The-Number/img/guess-the-number-logo.png" alt="">
+                </a>
+            </div>
+            <div class="container" name="quiz game">
+                <a href="./Quiz-Game/quiz-game.html" target="_blank">
+                    <h3 class="game-name">Quiz Game</h3>
+                    <img src="./Quiz-Game/img/quiz-game-logo.jpg" alt="">
+                </a>
+            </div>
+            <div class="container" name="flappy bird">
+                <a href="./Flappy-Bird/flappy-bird.html" target="_blank">
+                    <h3 class="game-name">Flappy Bird</h3>
+                    <img src="./Flappy-Bird/img/flappy-bird-logo.jpg" alt="">
+                </a>
+            </div>
+            <div class="container" name="snake game">
+                <a href="./Snake-Game/snake-game.html" target="_blank">
+                    <h3 class="game-name">Snake Game</h3>
+                    <img src="./Snake-Game/img/snake-game-logo.jpg" alt="">
+                </a>
+            </div>
+            <div class="container" name="tetris">
+                <a href="./Tetris/tetris.html" target="_blank">
+                    <h3 class="game-name">Tetris</h3>
+                    <img src="./Tetris/img/tetris-logo.png" alt="">
+                </a>
+            </div>
+            <div class="container" name="slide puzzle">
+                <a href="./Slide-Puzzle/slide-puzzle.html" target="_blank">
+                    <h3 class="game-name">Slide Puzzle</h3>
+                    <img src="./Slide-Puzzle/img/slide-puzzle-logo.jpeg" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="descriptions">
+            <h3 class="description-heading">Descriptions of the games available</h3>
+            <div class="description">
+                <img src="./Tic-Tac-Toe/img/tic-tac-toe-logo.png" alt="Tic Tac Toe">
+                <p><b>Tic Tac Toe:</b> A classic game for two players, where each player takes turns marking spaces in a 3x3 grid with the symbols (usually "X" and "O"). The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row wins the game.</p>
+            </div>
+            <div class="description">
+                <p><b>Rock Paper Scissors:</b> A simple hand game usually played between two people, where each player simultaneously forms one of three shapes with their hand: rock, paper, or scissors. The winner is determined based on the rules: rock crushes scissors, scissors cuts paper, and paper covers rock.</p>
+                <img src="./Rock-Paper-Scissor/img/rock-paper-scissor-logo.jpg" alt="Rock Paper Scissors">
+            </div>
+            <div class="description">
+                <img src="./Guess-The-Number/img/guess-the-number-logo.png" alt="Guess The Number">
+                <p><b>Guess The Number:</b> A guessing game where the player selects a random number within a specified range, and the other player has to guess the number within a limited number of attempts. The game provides hints (such as "too high" or "too low") to help the player narrow down their guesses.</p>
+            </div>
+            <div class="description">
+                <p><b>Quiz Game:</b> A trivia game where players answer questions on various topics, such as history, science, entertainment, and sports. Players earn points for correct answers and compete against each other or the computer to achieve the highest score.</p>
+                <img src="./Quiz-Game/img/quiz-game-logo.jpg" alt="Quiz Game">
+            </div>
+            <div class="description">
+                <img src="./Flappy-Bird/img/flappy-bird-logo.jpg" alt="Flappy Bird">
+                <p><b>Flappy Bird:</b> An addictive side-scrolling mobile game where players control a bird by tapping the screen to make it flap its wings and navigate through a series of pipes. The goal is to fly as far as possible without colliding with the pipes or hitting the ground.</p>
+            </div>
+            <div class="description">
+                <p><b>Snake Game:</b> A classic arcade game where players control a snake that grows longer as it consumes food items placed randomly on the game board. The objective is to guide the snake to eat as much food as possible without colliding with the walls or its own tail.</p>
+                <img src="./Snake-Game/img/snake-game-logo.jpg" alt="Snake Game">
+            </div>
+            <div class="description">
+                <img src="./Tetris/img/tetris-logo.png" alt="Tetris">
+                <p><b>Tetris:</b> A tile-matching puzzle video game where players manipulate geometric shapes called Tetriminos as they fall down the game field. The goal is to create horizontal lines without gaps by rotating and moving the Tetriminos, causing them to disappear and earn points.</p>
+            </div>
+            <div class="description">
+                <p><b>Slide Puzzle:</b> A puzzle game where an image is divided into a grid of squares, with one square missing. Players rearrange the squares by sliding them into the empty space to recreate the original image. The challenge lies in solving the puzzle with the fewest moves possible.</p>
+                <img src="./Slide-Puzzle/img/slide-puzzle-logo.jpeg" alt="Slide Puzzle">
+            </div>
+        <div id="contact" class="inline-block nav-items-link">
+            <h1 class="">Contact</h1>
+        </div>
+        <div class="contact px-24">
+            <h3 class="second-h3">GameZ Customer Support: Reach Out, We're Here to Help</h3>
+            <p>Welcome to GameZ’s Contact Hub-a place where your voice matters. At GameZ, your feedback, inquiries, and suggestions are valuable to us. We’re dedicated to providing you with comprehensive assistance and listening to your needs.</p> 
+            <h3 class="second-h3">Connect with GameZ's Customer Care</h3>
+            <p>While we don’t currently operate a dedicated helpline, we’re committed to addressing your queries promptly. Please fill in the details below to reach out to us. Our team will ensure your concerns are addressed effectively:</p> 
+            <div class="query-section">
+                <p>For any kind of queries, please write to us below</p>
+                <form action="">
+                    <input type="text" id="name" name="name" placeholder="Name">
+                    <input type="number" id="phone" name="phone" placeholder="Phone Number">
+                    <input type="email" id="email" name="email" placeholder="Email">
+                    <input type="text" id="subject" name="subject" placeholder="Subject">
+                    <textarea type="text" id="query" name="query" rows="10" placeholder="Write your query (min 20 characters)"></textarea>
+                    <button type="submit" class="">Submit Your Query!</button>
+                </form>
+            </div>
+        </div>
+        <div id="about" class="inline-block nav-items-link">
+            <h1 class="">About</h1>
+        </div>
+        <div class="about">
+            <img id="about-bg" class="my-4" src="../img/about-section.png" alt="GameZ About Background">
+            <div class="blockquote">
+                <blockquote>"GameZ: A fun mini game website with arcade, board, knowledge, puzzle, and more exciting games!"</blockquote>
+            </div>
+            <div class="about-section">
+                <div>
+                    <h3 class="second-h3">Who We Are?</h3>
+                    <p>We are the fastest growing online gaming company in India with a leading role in casual and board games segment. We make skill-based games that spark joy in the everyday lives of people by engaging and entertaining while they play. All GameZ games are approved and certified by Admin.</p>
+                </div>
+                <img src="../img/about-section-who-we-are.jpg" alt="We Are GameZ">
+            </div>
+        </div>
+        <div id="help-&-support" class="inline-block nav-items-link">
+            <h1 class="">Help & Support</h1>
+        </div>
+        <div class="help-and-support px-24">
+            <h3 class="second-h3">Email GameZ Support</h3>
+            <p>If you encounter any issues or have questions while using GameZ, our support team is here to help. Feel free to drop us an email below. Our inbox is open to assist you with any queries or feedback you might have.</p>
+            <p class="my-2"><b>Email: </b><a class="hover:underline" href="mailto:support@gamez.com">support@gamez.com</a></p>
+            <p><b>Note:</b> Our support team typically responds to inquiries within 24 hours during business days. Be patient during the submission of the query, we'll respond to your query as soon as possible.</p>
+            <h3 class="second-h3">Visit Us</h3>
+            <p>Want to meet us? Visit at<br>
+            Mahakal Institute of Technology & Management, near the village of Karchha, Behind Air Strip, Datana (Dewas Road), Ujjain, Madhya Pradesh, India (Asia).</p>
+        </div>
+    </main>
+    <footer>
+        <div class="line"></div>
+        <p>Copyright &copy;MITM Boys | All Rights Reserved</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

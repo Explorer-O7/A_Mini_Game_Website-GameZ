@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameZ: Slide Puzzle Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: rgb(53, 52, 52);
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        #logo {
+            margin: 1rem 0;
+            background: rgb(160, 0, 160);
+            color: white;
+            border-radius: 5px;
+            font-size: 2.5em;
+            font-weight: bolder;
+            text-align: center;
+            font-family: 'sans-serif', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        #board {
+            width: 450px;
+            height: 450px;
+            border: 3px solid aqua;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+        }
+
+        .puzzle-piece {
+            width: 148px;
+            cursor: pointer;
+            border: 1px solid rgb(160, 0, 160);
+            transition: transform 0.2s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <span id="logo">Slide Puzzle</span>
+        <div id="board"></div>
+        <h1>Turns: <span id="turns">0</span></h1>
+    </div>
+    <script src="./slide-puzzle.js"></script>
+</body>
+
+</html>

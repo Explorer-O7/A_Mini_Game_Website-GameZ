@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GameZ: Snake Game</title>
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: rgb(53, 52, 52);
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    #logo {
+        margin: 1rem 0;
+        background: rgb(160, 0, 160);
+        color: white;
+        border-radius: 5px;
+        font-size: 2.5em;
+        font-weight: bolder;
+        text-align: center;
+        font-family: 'sans-serif', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    #game-board {
+        border: 2px solid aqua;
+        background-color: rgb(11, 11, 80);
+        width: 400px;
+        height: 400px;
+        position: relative;
+    }
+    .snake-part {
+        width: 18px;
+        height: 18px;
+        background-color: rgb(160, 0, 160);
+        border-radius: 50%;
+        position: absolute;
+    }
+    #food {
+        width: 18px;
+        height: 18px;
+        background: radial-gradient(transparent, rgb(160, 0, 160));
+        border: 2px solid rgb(160, 0, 160);
+        border-radius: 50%;
+        position: absolute;
+    }
+    #score {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 24px;
+        color: #333;
+    }
+    #game-over {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 32px;
+        color: #333;
+        display: none;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <span id="logo">Snake Game</span>
+        <div id="game-board">
+            <div id="score">Score: 0</div>
+            <div id="game-over">Game Over!</div>
+        </div>
+    </div>
+</body>
+
+<script src="./snake-game.js"></script>
+</body>
+</html>
