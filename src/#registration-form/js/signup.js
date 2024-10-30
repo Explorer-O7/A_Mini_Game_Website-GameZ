@@ -9,7 +9,7 @@ import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com
 // Your web app's Firebase configuration    
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyCPQIraXxdgo8UB3AKYF46LRXKTexeFAX0",
+  apiKey: "<API_KEY>",
   authDomain: "a-mini-game-website-gamez.firebaseapp.com",
   projectId: "a-mini-game-website-gamez",
   storageBucket: "a-mini-game-website-gamez.appspot.com",
